@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <style>
+        .containerr{
+            position: relative;
+            top : 20px;
+            display: flex;
+        }
+        #map {
+            height: 600px;
+            width: 70%;
+            left: 22px;
+        }
+        #summaryy{
+            width: 20%;
+            position: relative;
+            left: 79px;
+            top: 77px;
+        }
+        p{
+            position: relative;
+            left :50px;
+            margin:0 auto;
+        }
+        .top{
+            /*height:100px;*/
+            background: url('clear.jpg');
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+<!--AIzaSyCAVzsomsKfbAe3-0lq5h9szIShpuX78Vg-->
+
+<!--AIzaSyDj0_sWfyVXXzsNca2HRKo88soDUdWg990-->
+<div class="top">
+
+</div>
+<div class="containerr">
+    <div id="map"></div>
+    <div id="summaryy">
+    </div>
+</div>
+
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+
+
+<script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAVzsomsKfbAe3-0lq5h9szIShpuX78Vg&callback=initMap">
+</script>
+
+<script src="googleMaps.js"></script>
+
+</body>
+</html>
